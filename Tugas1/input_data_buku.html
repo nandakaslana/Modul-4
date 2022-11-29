@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Input Data Buku</title>
+</head>
+<body>
+    <h2>Form Input Data Buku</h2>
+    <form action="Input.html" method="post">
+        <fieldset>
+            <legend>Input Data Anggota</legend>
+            <table>
+                <tr>
+                    <td><label for="kode_buku">Kode Buku</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="kode_buku" id="kode_buku" placeholder="Masukkan Kode Buku"></td>
+                </tr>
+                <tr>
+                    <td><label for="judul">Judul</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="judul" id="judul" placeholder="Masukkan Judul"></td>
+                </tr>
+                <tr>
+                    <td><label for="pengarang">Pengarang</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="pengarang" id="pengarang"></td>
+                </tr>
+                <tr>
+                    <td><label for="penerbit">Penerbit</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="penerbit" id="penerbit"></td>
+                </tr>
+                <tr>
+                    <td><label for="tahun_terbit">Tahun Terbit</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="tahun_terbit" id="tahun_terbit"></td>
+                </tr>
+                <tr>
+                    <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
+                    <td>:</td>
+                    <td>
+                        <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Laki-laki">
+                        <label for="Laki-laki">Laki-laki</label>
+                        <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Perempuan">
+                        <label for="Perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="stok">Stok</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="stok" id="stok"></td>
+                </tr>
+                <tr>
+                    <td><label for="jumlah_tersedia">Jumlah Tersedia</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="jumlah_tersedia" id="jumlah_tersedia"></td>
+                </tr>
+                <tr>
+                    <td><label for="jumlah_terpinjam">Jumlah Terpinjam</label></td>
+                    <td>:</td>
+                    <td><input type="text" name="jumlah_terpinjam" id="jumlah_terpinjam"></td>
+                </tr>
+                <tr>
+                    <td><label for="status">Status</label></td>
+                    <td>:</td>
+                    <td>
+                        <select id="status">
+                            <option value="Meminjam">Meminjam</option>
+                            <option value="Tidak_Meminjam">Tidak Meminjam</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit" name="submit" value="Selesai">Selesai</button>
+                        <button type="reset" name="reset" value="Batal">Batal</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

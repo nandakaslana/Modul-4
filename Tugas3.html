@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Input Data Anggota</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.2.3-dist/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Form Input Data Anggota</h2>
+            <form>
+                <div class="mb-3 row">
+                    <label for="kode_anggota" class="col-sm-2 col-form-label">Kode Anggota</label>
+                    <div class="col-3">
+                        <input class="form-control" type="text" placeholder="Masukkan Kode Anggota">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="nim" class="col-sm-2 col-form-label">NIM</label>
+                    <div class="col-3">
+                        <input class="form-control" type="number" placeholder="Masukkan NIM">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="nama_lengkap" class="col-sm-2 col-form-label">Nama Lengkap</label>
+                    <div class="col-3">
+                        <input class="form-control" type="text" placeholder="Masukkan Nama Lengkap">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="prodi" class="col-sm-2 col-form-label">Program Studi</label>
+                    <div class="col-3">
+                        <select class="form-select">
+                            <option selected>Pilih Prodi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Sistem Infomasi">Sistem Infomasi</option>
+                            <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                          </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="kelas" class="col-sm-2 col-form-label">Kelas</label>
+                    <div class="col-3">
+                        <input class="form-control" type="text" placeholder="Masukkan Kelas">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="kelas" class="col-sm-2 col-form-label">Kelas</label>
+                    <div class="col-3 pt-2">
+                        <input class="form-check-input" type="radio" name="jenis_kelamin" id="jenis_kelamin">
+                        <label class="form-check-label col-3" for="jenis_kelamin">
+                            Laki-laki
+                        </label>
+                        <input class="form-check-input" type="radio" name="jenis_kelamin" id="jenis_kelamin">
+                        <label class="form-check-label col-3" for="jenis_kelamin">
+                            Perempuan
+                        </label>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="telpon" class="col-sm-2 col-form-label">No Telepon</label>
+                    <div class="col-3">
+                        <input class="form-control" type="text" placeholder="Masukkan No Tel">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="foto" class="col-sm-2 pt-2 col-form-label">Foto</label>
+                    <div class="col-3">
+                        <input class="form-control" type="file" id="foto">
+                      </div>
+                </div>
+            </form>
+    </div>
+</body>
+</html>
