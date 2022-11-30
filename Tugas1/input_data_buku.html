@@ -2,81 +2,75 @@
 <html lang="en">
 <head>
     <title>Form Input Data Buku</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.2.3-dist/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="bootstrap-5.2.3-dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h2>Form Input Data Buku</h2>
-    <form action="Input.html" method="post">
-        <fieldset>
-            <legend>Input Data Anggota</legend>
-            <table>
-                <tr>
-                    <td><label for="kode_buku">Kode Buku</label></td>
-                    <td>:</td>
-                    <td><input type="text" name="kode_buku" id="kode_buku" placeholder="Masukkan Kode Buku"></td>
-                </tr>
-                <tr>
-                    <td><label for="judul">Judul</label></td>
-                    <td>:</td>
-                    <td><input type="text" name="judul" id="judul" placeholder="Masukkan Judul"></td>
-                </tr>
-                <tr>
-                    <td><label for="pengarang">Pengarang</label></td>
-                    <td>:</td>
-                    <td><input type="text" name="pengarang" id="pengarang"></td>
-                </tr>
-                <tr>
-                    <td><label for="penerbit">Penerbit</label></td>
-                    <td>:</td>
-                    <td><input type="text" name="penerbit" id="penerbit"></td>
-                </tr>
-                <tr>
-                    <td><label for="tahun_terbit">Tahun Terbit</label></td>
-                    <td>:</td>
-                    <td><input type="text" name="tahun_terbit" id="tahun_terbit"></td>
-                </tr>
-                <tr>
-                    <td><label for="jenis_kelamin">Jenis Kelamin</label></td>
-                    <td>:</td>
-                    <td>
-                        <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Laki-laki">
-                        <label for="Laki-laki">Laki-laki</label>
-                        <input type="radio" name="jenis_kelamin" id="jenis_kelamin" value="Perempuan">
-                        <label for="Perempuan">Perempuan</label>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="stok">Stok</label></td>
-                    <td>:</td>
-                    <td><input type="text" name="stok" id="stok"></td>
-                </tr>
-                <tr>
-                    <td><label for="jumlah_tersedia">Jumlah Tersedia</label></td>
-                    <td>:</td>
-                    <td><input type="text" name="jumlah_tersedia" id="jumlah_tersedia"></td>
-                </tr>
-                <tr>
-                    <td><label for="jumlah_terpinjam">Jumlah Terpinjam</label></td>
-                    <td>:</td>
-                    <td><input type="text" name="jumlah_terpinjam" id="jumlah_terpinjam"></td>
-                </tr>
-                <tr>
-                    <td><label for="status">Status</label></td>
-                    <td>:</td>
-                    <td>
-                        <select id="status">
+    <div class="container">
+        <h2>Form Input Data Buku</h2>
+            <form>
+                <div class="mb-3 row">
+                    <label for="kode_buku" class="col-sm-2 col-form-label">Kode Anggota</label>
+                    <div class="col-3">
+                        <input class="form-control" type="text" placeholder="Masukkan Kode Buku">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="judul" class="col-sm-2 col-form-label">Judul</label>
+                    <div class="col-3">
+                        <input class="form-control" type="text" placeholder="Masukkan Judul Buku">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="pengarang" class="col-sm-2 col-form-label">Pengarang</label>
+                    <div class="col-3">
+                        <input class="form-control" type="text" placeholder="Masukkan Nama Pengarang">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="penerbit" class="col-sm-2 col-form-label">Penerbit</label>
+                    <div class="col-3">
+                        <input class="form-control" type="text" placeholder="Masukkan Nama Penerbit">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="tahun_terbit" class="col-sm-2 col-form-label">Tahun Terbit</label>
+                    <div class="col-3">
+                        <input class="form-control" type="text" placeholder="Masukkan Tahun Terbit">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="Stok" class="col-sm-2 col-form-label">Stok</label>
+                    <div class="col-3">
+                        <input class="form-control" type="number" placeholder="Masukkan Stok">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="jumlah_tersedia" class="col-sm-2 col-form-label">Jumlah Tersedia</label>
+                    <div class="col-3">
+                        <input class="form-control" type="number" placeholder="Masukkan Jumlah Tersedia">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="jumlah_terpinjam" class="col-sm-2 col-form-label">Jumlah Terpinjam</label>
+                    <div class="col-3">
+                        <input class="form-control" type="number" placeholder="Masukkan Jumlah Terpinjam">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="status" class="col-sm-2 col-form-label">Status</label>
+                    <div class="col-3">
+                        <select class="form-select">
+                            <option selected>Status</option>
                             <option value="Meminjam">Meminjam</option>
-                            <option value="Tidak_Meminjam">Tidak Meminjam</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <button type="submit" name="submit" value="Selesai">Selesai</button>
-                        <button type="reset" name="reset" value="Batal">Batal</button>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-    </form>
+                            <option value="Tidak Meminjam">Tidak Meminjam</option>
+                          </select>
+                    </div>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-danger">Kirim</button>
+                </div>
+            </form>
+    </div>
 </body>
 </html>
